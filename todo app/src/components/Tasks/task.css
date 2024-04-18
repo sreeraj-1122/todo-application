@@ -1,0 +1,49 @@
+.task-section {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(230, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.no-todos-msg{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.task-left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.task-left-section h5 {
+    font-size: 15px;
+}
+
+.task-left-section p {
+    font-size: 14px;
+    width: 100%;
+}
+
+.task-icon-section {
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.task-icons {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.task-icons .icons {
+    transition: all .3s ease-in-out;
+}
+
+.task-icons .icons:hover {
+    color: red;
+}

@@ -1,0 +1,49 @@
+.add-todo-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+.input-section {
+    border: 1px solid rgba(217, 217, 217, 1);
+    width: 290px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.input-section input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 270px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+
+}
+
+.input-section input::placeholder {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.submit-btn button {
+    width: 260px;
+    height: 40px;
+    color: #fff;
+    background-color: rgba(89, 126, 247, 1);
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.submit-btn button:hover {
+    background-color: rgb(69, 112, 250);
+}

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.auth-main-section {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+}
+
+.auth-left-section {
+    position: relative;
+}
+
+.auth-left-section .logo {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+}
+
+
+.login-section {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-section .login-head {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    font-size: 23px;
+    font-weight: 500;
+
+}
+
+.login-section .login-content {
+    text-align: justify;
+    width: 400px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.55);
+    line-height: 1.4;
+    flex-wrap: wrap;
+}
+
+.login-btn img {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    display: block;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.login-btn {
+    background-color: rgba(89, 126, 247, 1);
+    width: 250px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 8px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.login-btn:hover{
+    background-color: rgb(65, 106, 240);
+
+}
+.auth-right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.top-img img {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: -14px;
+}
+
+.right-img-section {
+    position: relative;
+}
+
+.boy-img {
+    position: absolute;
+    top: 230px;
+    z-index: 100;
+    left: 300px;
+
+}
+
+.boy-img img {
+    width: 250px;
+    height: 250px;
+}
+
+.background-img {
+    width: 100%;
+
+}
+
+.background-img .svg {
+    width: 700px;
+    overflow: hidden;
+    height: 790px;
+    position: relative;
+    bottom: 50px;
+    right: -50px;
+    z-index: 1;
+
+}
+@media (max-width:768px) and (min-width:427px) {
+    .login-section .login-content {
+        padding: 0 15px;
+        width: 100%;
+        font-size: 14px;
+
+    }
+}
+@media (max-width:426px) {
+    .auth-main-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: scroll;
+    }
+
+    .auth-left-section .logo {
+        display: none;
+    }
+
+    .auth-right-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 80px; */
+    }
+
+    .top-img img {
+        width: 50px;
+        height: 60px;
+        position: absolute;
+        top: -14px;
+
+    }
+    .boy-img {
+        position: absolute;
+        top: 280px;
+        z-index: 100;
+        left: 300px;
+
+    }
+
+    .login-section {
+        margin-top: 12px;
+    }
+
+    .login-section .login-content {
+        padding: 0 15px;
+        width: 100%;
+        font-size: 14px;
+
+    }
+
+    .login-btn {
+        margin-bottom: 30px;
+    }
+
+    .background-img .svg {
+        width: 700px;
+        height: 690px;
+
+    }
+}
